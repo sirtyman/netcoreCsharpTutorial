@@ -1,7 +1,6 @@
-namespace MainTests;
-
-
 using CSharpTutorial;
+
+namespace MainTests;
 
 public class UnitTest1
 {
@@ -9,6 +8,5 @@ public class UnitTest1
     public void Test1()
     {
         var program = new MainProgram();
-
     }
 }

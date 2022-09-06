@@ -1,17 +1,15 @@
-﻿using System;
+﻿using CSharpTutorial.Persons;
 
+namespace CSharpTutorial;
 
-namespace CSharpTutorial
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            var john = new Persons.Person();
-            john.FirstName = "John";
-            john.SecondName = "Blezinskas";
+        var john = new Person();
+        john.FirstName = "John";
+        john.SecondName = "Blezinskas";
 
-            john.Introduce();
-        }
+        john.Introduce();
     }
 }

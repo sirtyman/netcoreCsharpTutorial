@@ -1,17 +1,14 @@
-﻿using System;
+﻿namespace CSharpTutorial;
 
-namespace CSharpTutorial
+public class MainProgram
 {
-    public class MainProgram
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine("Hello, World!");
+    }
 
-        string GetName()
-        {
-            return "MainProgram";
-        }
+    private string GetName()
+    {
+        return "MainProgram";
     }
 }
