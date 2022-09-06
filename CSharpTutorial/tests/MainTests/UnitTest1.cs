@@ -1,7 +1,7 @@
 namespace MainTests;
 
 
-using MainNamespace;
+using CSharpTutorial;
 
 public class UnitTest1
 {

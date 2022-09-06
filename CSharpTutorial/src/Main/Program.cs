@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MainNamespace
+namespace CSharpTutorial
 {
     public class MainProgram
     {
