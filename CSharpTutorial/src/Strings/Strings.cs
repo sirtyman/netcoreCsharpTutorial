@@ -1,4 +1,6 @@
-﻿namespace CSharpTutorial;
+﻿using System;
+
+namespace CSharpTutorial;
 
 internal class Program
 {
@@ -23,4 +25,6 @@ internal class Program
         foreach (var arg in args) Console.Write(arg + " ");
         Console.Write("\n");
     }
+
+
 }
