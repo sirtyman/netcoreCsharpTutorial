@@ -1,12 +1,22 @@
-namespace CSharpTutorial.Persons;
+using System;
 
-internal class Person
+
+namespace Persons
 {
-    public string SecondName { get; set; } = "";
-    public string FirstName { get; set; } = "";
-
-    public void Introduce()
+    public class Person
     {
-        Console.WriteLine($"### {FirstName} {SecondName} ###");
+        public string SecondName { get; set; } = "";
+        public string FirstName { get; set; } = "";
+
+        public Person() => (FirstName, SecondName) = ("", "");
+
+        public Person(string firstName, string secondName) =>
+            (SecondName, FirstName) = (firstName, secondName);
+
+        public void Introduce()
+        {
+            Console.WriteLine($"### {FirstName} {SecondName} ###");
+        }
     }
+
 }

@@ -1,6 +1,7 @@
-﻿using CSharpTutorial.Persons;
+﻿using System;
+using Persons;
 
-namespace CSharpTutorial;
+namespace Persons;
 
 public class Program
 {
@@ -11,5 +12,13 @@ public class Program
         john.SecondName = "Blezinskas";
 
         john.Introduce();
+
+        AugmentedPerson marcin = new AugmentedPerson("Marcin", 
+            "Tejman", "88031111992");
+        marcin.Introduce();
+
+
+        Person basePerson = new AugmentedPerson("Robert", "Gala", "00000000");
+        basePerson.Introduce();
     }
 }
